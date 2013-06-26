@@ -2,7 +2,7 @@
 # Cookbook Name:: mirror
 # Recipe:: default
 #
-# Copyright 2013, YOUR_COMPANY_NAME
+# Copyright 2013, Rapid7
 #
 # All rights reserved - Do Not Redistribute
 #
