@@ -1,5 +1,4 @@
-# Mirror
-[![Build Status](https://secure.travis-ci.org/rapid7-cookbooks/wavsep.png)](http://travis-ci.org/rapid7-cookbooks/wavsep)
+# Mirror [![Build Status](https://secure.travis-ci.org/rapid7-cookbooks/wavsep.png)](http://travis-ci.org/rapid7-cookbooks/wavsep)
 ## Description
 A cookbook that manages different types of repository mirrors. The goals
 were originally to just create a SSH repository mirror. It became clear
