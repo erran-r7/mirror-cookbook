@@ -8,3 +8,5 @@ license           'All rights reserved'
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 recipe            'mirror::default', 'Determines what mirror recipe should be ran'
 version           '0.0.1'
+
+depends 'git'
