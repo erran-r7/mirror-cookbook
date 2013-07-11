@@ -7,6 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
+default[:mirror][:flavors] = [:git]
 # A hash in the format:
 # {
 #   :'chef-repo' => {
@@ -14,8 +15,5 @@
 #     :reference => 'HEAD',
 #   }
 # }
-#
-# NOTE: You can add an "auxiliary path" by naming the repository with a / in the
-#   name, i.e. :'repo-group/repo-name'
 default[:mirror][:repositories] = {}
 default[:mirror][:repository_path] = '/opt' # REVIEW
