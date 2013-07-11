@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'git'
+# TODO: Use the git::server recipe!
 
 case node[:mirror][:git][:protocol]
 when :git
@@ -48,7 +48,8 @@ when :ssh
 
       user 'root'
     end
-  elsif %w[debian rhel].include?(node[:platform_family])
+  elsif platform_family?('debian','rhel')
+    package 'git'
     package 'openssh-server'
     service('sshd') { action :enable }
   end
