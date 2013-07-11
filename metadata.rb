@@ -10,3 +10,6 @@ recipe            'mirror::default', 'Determines what mirror recipe should be ra
 version           '0.0.1'
 
 depends 'git'
+depends 'homebrew'
+depends 'mercurial'
+depends 'python'

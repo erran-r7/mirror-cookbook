@@ -16,4 +16,8 @@ default[:mirror][:flavors] = [:git]
 #   }
 # }
 default[:mirror][:repositories] = {}
-default[:mirror][:repository_path] = '/opt' # REVIEW
+
+# NOTE: This path is created by the git::server recipe
+#       The git::server recipe uses git::shell
+default[:mirror][:repository_path] = '/srv/git'
+default[:mirror][:server] = false

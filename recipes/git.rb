@@ -7,4 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe 'git::server'
+include_recipe(node[:mirror][:server] ? 'git::server' : 'git')

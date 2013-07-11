@@ -6,6 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+# Currently this recipe will mirror git and mercurial repositories
 
-node[:mirror][:flavors].each(&method(:include_recipe))
-node[:mirror][:repositories].each(&method(:sync_repository))
+node.set[:mirror][:server] = true
+include_recipe 'mirror::default'
